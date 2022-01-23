@@ -1,0 +1,44 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.full-width{
+    width: 100%;
+}
+
+.p-search{
+    padding: 9px;
+    width: 250px;
+    border-radius: 8px;
+}
+
+.text-header-style{
+    padding: 8px;
+    margin-left: 30px;
+    /* padding-left: 30px; */
+    font-size: 24px;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: white;
+}
+
+.text-style{
+    padding: 16px 0;
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: rgb(2, 32, 31);
+}
+
+.highLight:hover{
+    color: lightseagreen;
+    font-size: 20px;
+    font-weight: bold;
+
+}
+
+

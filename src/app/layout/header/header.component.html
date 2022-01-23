@@ -1,0 +1,10 @@
+<div id="app-header" fxLayout fxLayoutAlign="space-between center">
+    <div id="company-name">Varahi Technology</div>
+    <div fxLayout fxLayoutGap="16px" fxLayoutAlign="end center">
+        <div> <a routerLink="/dashboard" mat-icon-button> <mat-icon>home</mat-icon> </a> </div>
+        <div>Welcome <strong>{{ user?.firstName }}</strong></div>
+        <div>
+            <button mat-raised-button (click)="logout()">Logout</button>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,45 @@
+<div id="registration-wrapper">
+    <app-header *ngIf="loginUser"></app-header>
+    <div id="registration-box">
+        <div id="heading">Registration</div>
+        <div id="form">
+            
+            <form name="registrationForm" [formGroup]="registrationForm" novalidate>
+                <mat-form-field class="full-width" appearance="outline">
+                  <mat-label>First name</mat-label>
+                  <input matInput placeholder="First name" formControlName="firstName">
+                  <mat-error>First name is required</mat-error>
+                </mat-form-field>
+              
+                <mat-form-field class="full-width" appearance="outline">
+                  <mat-label>Last name</mat-label>
+                  <input matInput placeholder="Last name" formControlName="lastName">
+                  <mat-error>Last name is required</mat-error>
+                </mat-form-field>
+
+                <mat-form-field class="full-width" appearance="outline">
+                    <mat-label>Username</mat-label>
+                    <input matInput placeholder="Username" formControlName="userName">
+                    <mat-error>Username is required</mat-error>
+                </mat-form-field>
+
+                <mat-form-field class="full-width" appearance="outline">
+                    <mat-label>Password</mat-label>
+                    <input matInput type="password" placeholder="Password" formControlName="password">
+                    <mat-error>Password is required</mat-error>
+                </mat-form-field>
+
+                <mat-radio-group aria-label="Select an option" fxLayout fxLayoutGap="16px" formControlName="role">
+                    <mat-radio-button value="1">Admin</mat-radio-button>
+                    <mat-radio-button value="2">User</mat-radio-button>
+                </mat-radio-group>
+                
+                <div id="btn-wrapper" fxLayout fxLayoutAlign="space-between center">
+                    <a mat-raised-button routerLink="/login">Back</a>
+                    <button mat-raised-button color="primary" [disabled]="registrationForm.invalid" (click)="register()">Register</button>
+                </div>
+              </form>
+
+        </div>
+    </div>
+</div>

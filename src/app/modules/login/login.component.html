@@ -1,0 +1,28 @@
+<div id="login-wrapper">
+    <div id="login-box">
+        <div id="heading">Login</div>
+        <div id="form">
+            
+            <form name="loginForm" [formGroup]="loginForm" novalidate>
+                <mat-form-field class="full-width" appearance="outline">
+                  <mat-label>Username</mat-label>
+                  <input matInput placeholder="Username" formControlName="username">
+                  <mat-error>Username is required</mat-error>
+                </mat-form-field>
+              
+                <mat-form-field class="full-width" appearance="outline">
+                  <mat-label>Password</mat-label>
+                  <input matInput type="password" placeholder="Password" formControlName="password">
+                  <mat-error>Password is required</mat-error>
+                </mat-form-field>
+
+                <div id="btn-wrapper" fxLayout fxLayoutAlign="space-between center">
+                    <a mat-raised-button routerLink="/registration">Registration</a>
+                    <button mat-raised-button color="primary" [disabled]="loginForm.invalid" (click)="login()">Login</button>
+                    <button (click)="submitData()">submit</button>
+                </div>
+              </form>
+
+        </div>
+    </div>
+</div>

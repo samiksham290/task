@@ -1,0 +1,49 @@
+<div id="addInventory">
+
+    <h1 mat-dialog-title>Add Item</h1>
+
+
+    <div mat-dialog-content id="content">
+       
+        <form name="itemForm" [formGroup]="itemForm" novalidate>
+            <mat-form-field class="full-width" appearance="outline">
+                <mat-label>Item Name</mat-label>
+                <input matInput placeholder="Enter Item Name" formControlName="itemName">
+                <mat-error>Item Name is required</mat-error>
+            </mat-form-field>
+
+            <mat-form-field class="full-width" appearance="outline">
+                <mat-label>Price</mat-label>
+                <input type="number" matInput placeholder="Enter Item Price" formControlName="itemPrice">
+                <mat-error>Item Price is required</mat-error>
+            </mat-form-field>
+
+            <mat-form-field class="full-width" appearance="outline">
+                <mat-label>Category</mat-label>
+                <mat-select formControlName="category">
+                  <mat-option *ngFor="let category of categories" [value]="category">
+                    {{category.name}}
+                  </mat-option>
+                </mat-select>
+              </mat-form-field>
+
+            <mat-form-field class="full-width" appearance="outline">
+                <mat-label>Item Description</mat-label>
+                <textarea matInput placeholder="Enter Item Description" formControlName="itemDescription"></textarea>
+                <mat-error>Item Description is required</mat-error>
+            </mat-form-field>
+            
+        </form>
+
+    </div>
+
+    <div mat-dialog-actions fxLayout fxLayoutAlign="end center" fxLayoutGap="16px">
+        <button mat-raised-button color="primary" [disabled]="itemForm.invalid" *ngIf="data==null" (click)="addItem()" >Add</button>
+        <button mat-raised-button color="primary" [disabled]="itemForm.invalid" *ngIf="data!==null" (click)="updateItem()">Update</button>
+
+        <button mat-raised-button [mat-dialog-close]="false" >Cancel</button>
+
+
+    </div>
+
+</div>

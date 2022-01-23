@@ -1,0 +1,39 @@
+#profile{
+    width: 100%;
+
+    .content{
+
+        width: 400px;
+        border: 1px solid #ddd;
+        margin: 32px auto;
+        
+
+
+        .content-header{
+            background: #ddd;
+            padding: 0 16px;
+        }
+        .content-body{
+            padding: 16px;
+        }
+
+        mat-icon{
+            font-size: 18px;
+        }
+
+
+        .label-info{
+            margin-bottom: 16px;
+            
+            .label{
+                font-size: 12px;
+            }
+
+            .info{
+                font-size: 14px;
+                font-weight: bold;
+            }
+        }
+
+    }
+}

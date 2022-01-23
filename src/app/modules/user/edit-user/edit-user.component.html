@@ -1,0 +1,42 @@
+<div id="edit-user">
+
+  <h2 mat-dialog-title>Edit user</h2>
+
+  <mat-dialog-content>
+    <form fxFlex="100" fxLayout="row wrap" name="profileForm" [formGroup]="profileForm" novalidate>
+      <mat-form-field fxFlex="100" appearance="outline">
+        <mat-label>First name</mat-label>
+        <input matInput placeholder="First name" formControlName="firstName">
+      </mat-form-field>
+
+      <mat-form-field fxFlex="100" appearance="outline">
+        <mat-label>Last name</mat-label>
+        <input matInput placeholder="Last name" formControlName="lastName">
+      </mat-form-field>
+
+      <mat-form-field fxFlex="100" appearance="outline">
+        <mat-label>Username</mat-label>
+        <input matInput placeholder="Username" formControlName="userName">
+      </mat-form-field>
+
+      <mat-form-field fxFlex="100" appearance="outline">
+        <mat-label>Password</mat-label>
+        <input matInput type="password" placeholder="Password" formControlName="password">
+      </mat-form-field>
+
+      <!-- <mat-radio-group aria-label="Select an option" fxLayout fxLayoutGap="16px" formControlName="role">
+            <mat-radio-button value="1">Admin</mat-radio-button>
+            <mat-radio-button value="2">User</mat-radio-button>
+        </mat-radio-group> -->
+
+      <div id="btn-wrapper">
+
+      </div>
+    </form>
+  </mat-dialog-content>
+
+  <mat-dialog-actions fxLayout fxLayoutAlign="end center">
+    <button mat-raised-button color="primary" (click)="updateProfile()">Update</button>
+    <button mat-button mat-dialog-close>Cancel</button>
+  </mat-dialog-actions>
+</div>

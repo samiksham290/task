@@ -1,0 +1,11 @@
+<div id="dashboard">
+    <app-header></app-header>
+    <div class="content" >
+            <h1>Welcome {{ user?.firstName }}</h1>
+            
+            <div fxLayout fxLayoutAlign="center center" fxLayoutGap="16px">
+                <a routerLink="/profile" mat-raised-button color="primary" >Profile</a>
+                <a *ngIf="user?.role == 1" routerLink="/user" mat-raised-button color="primary" >Users</a>
+            </div>
+    </div>
+</div>

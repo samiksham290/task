@@ -1,0 +1,202 @@
+{
+  "user": [
+    {
+      "firstName": "Samiksha",
+      "lastName": "Meshram",
+      "userName": "sami",
+      "password": "123456",
+      "role": 1,
+      "id": 1
+    },
+    {
+      "firstName": "Karan123",
+      "lastName": "Meshram",
+      "userName": "karan48",
+      "password": "123456789",
+      "role": "1",
+      "id": 2
+    },
+    {
+      "firstName": "mmm123",
+      "lastName": "kkk132",
+      "userName": "mk123",
+      "password": "121212",
+      "role": "2",
+      "id": 5
+    },
+    {
+      "firstName": "qwqw",
+      "lastName": "mkmkmk",
+      "userName": "mdasas",
+      "password": "12dsa",
+      "role": "2",
+      "id": 6
+    },
+    {
+      "firstName": "kokok",
+      "lastName": "bgbgbgbdfdsfds",
+      "userName": "dsad",
+      "password": "ewq",
+      "role": "2",
+      "id": 7
+    },
+    {
+      "firstName": "mmm",
+      "lastName": "kkk",
+      "userName": "mk",
+      "password": "121212",
+      "role": "2",
+      "id": 8
+    },
+    {
+      "firstName": "cdcd",
+      "lastName": "xsxsx",
+      "userName": "ere",
+      "password": "r4r4r4",
+      "role": "2",
+      "id": 9
+    },
+    {
+      "firstName": "mkmk",
+      "lastName": "bhbh",
+      "userName": "vgg",
+      "password": "cdcd5545",
+      "role": "2",
+      "id": 10
+    },
+    {
+      "firstName": "mmmko",
+      "lastName": "dasdcd",
+      "userName": "eewr",
+      "password": "78979",
+      "role": "2",
+      "id": 11
+    },
+    {
+      "firstName": "dsada",
+      "lastName": "hfhfh",
+      "userName": "nbnb",
+      "password": "dadd12",
+      "role": "2",
+      "id": 11
+    },
+    {
+      "firstName": "dsa",
+      "lastName": "dsda",
+      "userName": "dsad",
+      "password": "dsad",
+      "role": "2",
+      "id": 12
+    },
+    {
+      "firstName": "sami",
+      "lastName": "meshram",
+      "userName": "samik",
+      "password": "123",
+      "role": "1",
+      "id": 13
+    },
+    {
+      "firstName": "sami",
+      "lastName": "mesharam",
+      "userName": "Samiksha",
+      "password": "123321",
+      "role": "1",
+      "id": 14
+    }
+  ],
+  "item": [
+    {
+      "itemName": "samsung",
+      "itemPrice": 30000,
+      "category": {
+        "id": 1,
+        "name": "Mobile"
+      },
+      "itemDescription": "best mobile in best price",
+      "id": 1
+    },
+    {
+      "itemName": "OPPO",
+      "itemPrice": 20000,
+      "category": {
+        "id": 1,
+        "name": "Mobile"
+      },
+      "itemDescription": "48MP Camera",
+      "id": 2
+    },
+    {
+      "itemName": "Nokia",
+      "itemPrice": 14000,
+      "category": {
+        "id": 1,
+        "name": "Mobile"
+      },
+      "itemDescription": "Rear Fringerprint Sensor",
+      "id": 3
+    },
+    {
+      "itemName": "readMe Note8",
+      "itemPrice": "18000",
+      "category": {
+        "id": 3,
+        "name": "Fashion"
+      },
+      "itemDescription": "long term battery",
+      "id": 4
+    },
+    {
+      "itemName": "Canon Camera",
+      "itemPrice": 13000,
+      "category": {
+        "id": 2,
+        "name": "Elctronics"
+      },
+      "itemDescription": "wifi available,1080p recording at 30p",
+      "id": 5
+    },
+    {
+      "itemName": "OnePluse",
+      "itemPrice": 28000,
+      "category": {
+        "id": 3,
+        "name": "Fashion"
+      },
+      "itemDescription": "dsbfkh sdfba",
+      "id": 7
+    },
+    {
+      "id": 8,
+      "itemName": "Readme 8i",
+      "itemPrice": 12999,
+      "category": {
+        "id": 1,
+        "name": "Mobile"
+      },
+      "itemDescription": "120Hz Smooth Display"
+    }
+  ],
+  "category": [
+    {
+      "id": 1,
+      "name": "Mobile"
+    },
+    {
+      "id": 2,
+      "name": "Elctronics"
+    },
+    {
+      "id": 3,
+      "name": "Fashion"
+    },
+    {
+      "id": 4,
+      "name": "Furniture"
+    },
+    {
+      "id": 5,
+      "name": "Grocery"
+    }
+  ]
+}

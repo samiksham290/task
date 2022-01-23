@@ -1,0 +1,52 @@
+#view-user{
+
+    background: #ddd;
+    min-height: 100%;
+    width: 100%;
+    padding-bottom: 16px;
+
+    .hidden{
+        display: none;
+    }
+
+    .content{
+        width: 600px;
+        background: #fff;
+        margin: 32px auto;
+
+        .content-header{
+            padding: 8px 16px;
+            border-bottom: 1px solid #ddd;
+            background: rgb(17, 93, 128);
+            color: #fff;
+        }
+
+        table{
+            width: 100%;
+
+            thead{
+                tr{
+                    th{
+                        text-align: left;
+                        padding: 12px;
+                        border-bottom: 1px solid #ddd;
+                    }
+                }
+            }
+
+            tbody{
+                tr{
+                    td{
+                        text-align: left;
+                        padding: 12px;
+                        border-bottom: 1px solid #ddd;
+
+                        mat-icon{
+                            color: #6c6262;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,75 @@
+<div id="profile">
+    <div id="content" fxLayout="row wrap">
+        <div id="content-header" fxFlex="100" fxLayout="row-wrap" fxLayoutAlign="space-between">
+            <div class="text-header-style">ShopBridge</div>
+            <div fxLayout fxLayoutGap="16px">
+                <div>
+                    <input class="p-search" type="text" placeholder="search here">
+                </div>
+                <div>
+                    <button mat-raised-button color="primary">Add Item</button>
+                </div>
+            </div>
+
+        </div>
+
+        <div id="main-content" fxFlex="100" fxLayout="row-wrap">
+            <div id="left-content" fxFlex="250px">
+                <div>
+                    <select>
+                        <option value="mobile">Mobile</option>
+                        <option value="grosery">Grocery</option>
+                        <option value="electronics">Electronics</option>
+                        <option value="cloths">Cloths</option>
+
+                    </select>
+                </div>
+
+                <div>
+                    <div class="text-style">price</div>
+                    <div>
+                        <div>
+                            <label>Min-Price</label>
+                            <input type="number">
+
+                        </div>
+                        <div>
+                            <label>Max-Price</label>
+                            <input type="number">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="center-content" fxFlex fxLayout="row wrap" fxLayoutAlign="space-between start">
+                <div id="wrap-card" *ngFor="let d of data">
+
+                   <div fxLayoutAlign="end end">
+                    <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
+                        <mat-icon>more_vert</mat-icon>
+                      </button>
+                      <mat-menu #menu="matMenu">
+                        <button mat-menu-item>
+                          <mat-icon>edit</mat-icon>
+                          <span>Edit</span>
+                        </button>
+                        
+                        <button mat-menu-item>
+                          <mat-icon>delete</mat-icon>
+                          <span>Delete</span>
+                        </button>
+                      </mat-menu>
+                   </div>
+                    <img src="https://cdn.vox-cdn.com/thumbor/6IJKVQCsWxbVePah6-f1_EDS9bY=/0x0:2040x1360/1800x1800/filters:focal(760x678:761x679)/cdn.vox-cdn.com/uploads/chorus_asset/file/21696153/bfarsace_200803_4124_0016.jpg"
+                        alt="samsung mobile">
+                    <div>
+                        <h1>Samsung Galaxy M52</h1>
+                        <h1>latest samsung mobile with 778b processor</h1>
+                        <h1>Price : 24999</h1>
+                    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

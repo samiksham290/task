@@ -1,0 +1,72 @@
+<div id="profile">
+    <div id="content" fxLayout="row wrap">
+        <div id="content-header" fxFlex="100" fxLayout="row-wrap" fxLayoutAlign="space-between">
+            <div class="text-header-style">ShopBridge</div>
+            <div fxLayout fxLayoutGap="16px">
+                <div>
+                    <input class="p-search" [formControl]="filters.search" type="text" placeholder="search here">
+                </div>
+                <div>
+                    <button mat-raised-button (click)="add()">Add Item</button>
+                </div>
+            </div>
+
+        </div>
+
+        <div id="main-content" fxFlex="100" fxLayout="row-wrap">
+            <div id="left-content" fxFlex="250px">
+                <div>
+                    <select [formControl]="filters.category">
+                        <option *ngFor="let category of categories"  [ngValue]="category.id">{{category.name}}</option>
+                    </select>
+                </div>
+
+                <div>
+                    <div class="text-style">Price</div>
+                    <div>
+                        <div>
+                            <label>Min-Price</label>
+                            <input type="number" [formControl]="filters.minPrice">
+
+                        </div>
+                        <div>
+                            <label>Max-Price</label>
+                            <input type="number" [formControl]="filters.maxPrice">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="center-content" fxFlex fxLayout="row wrap" fxLayoutAlign="space-between start">
+                <div fxFlex="350px" id="wrap-card" *ngFor="let d of data">
+
+                    <div class="card-header" >
+                        <button mat-mini-fab [matMenuTriggerFor]="menu" >
+                            <mat-icon>more_vert</mat-icon>
+                        </button>
+                        <mat-menu #menu="matMenu">
+                            <button mat-menu-item (click)="addOrEditItem(d)">
+                                <mat-icon>edit</mat-icon>
+                                <span>Edit</span>
+                            </button>
+
+                            <button mat-menu-item (click)="getDelete(d.id)">
+                                <mat-icon>delete</mat-icon>
+                                <span>Delete</span>
+                            </button>
+                        </mat-menu>
+                    </div>
+                    <img src="https://cdn.vox-cdn.com/thumbor/6IJKVQCsWxbVePah6-f1_EDS9bY=/0x0:2040x1360/1800x1800/filters:focal(760x678:761x679)/cdn.vox-cdn.com/uploads/chorus_asset/file/21696153/bfarsace_200803_4124_0016.jpg"
+                        alt="samsung mobile">
+                    <div>
+                        <h1>{{d.itemName | titlecase }}</h1>
+                        <p>{{d.itemDescription}}</p>
+                        <p> Category: {{d.category.name}} </p>
+                        <h2>₹{{d.itemPrice}}/-</h2>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
